@@ -1,0 +1,315 @@
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking datatube-hydra-stg-eastus2.azurewebsites.net (be patient)...INFO: POST header == 
+---
+POST /query HTTP/1.0
+Content-length: 735
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEyMzQ1Njc4LTQ0NDQtMTIzNC0xMjM0LTEyMzQ1Njc4OTEyMyIsImNzcmYiOiI3Y2MwZjJhYi00MTI2LTRiZDAtOGIzZi1mMjI2OTBlMmZiZWQiLCJzZXNzaW9uSWQiOiI0NWU0NzgxZC1hNzk0LTRkNjUtODc2Mi1lMTZmN2ZlZWQ3NDkiLCJjbGllbnRJZCI6ImViZjg3Y2EwLTM3YzctNDU5ZS1iMGNjLTFiNDAxNGFiMWYyMyIsImRlc2NyaXB0aW9uIjpudWxsLCJhcHBJZCI6IjU1MzQwY2VhLWE0OGUtNDUxYy1hMzJlLTc2NGQ3M2UwNjJiMiIsInJvbGUiOiJhcHBsaWNhdGlvbiIsInJvbGVzIjpbXSwic2NvcGUiOm51bGwsImlzc3VlZEJ5IjoiNTUzNDBjZWEtYTQ4ZS00NTFjLWEzMmUtNzY0ZDczZTA2MmIyIiwiYXV0aFR5cGUiOiJFWFRFUk5BTCIsImlzc3VlZEJ5TmFtZSI6IkRhdGFUdWJlIiwiY29va2llVmVyc2lvbiI6IjciLCJpYXQiOjE2MzE2MTkyNzAsImV4cCI6MTYzMTYyMTA3MH0.vc3Tn0vFTtXrQXb52DAsbEWpF-A9KauYJf37JMSaGELRQ3tjA2gHEIjVU2rSpzRC3NAA_zK77r_eeRiM6RndnKRv3yIRamopIJO6BPHF7uHI9de3Tw4jFXgFnTmrLPaHZy7CQvCag7XeYbZ_jm7kJKTXbdUGKXw0xqt_jHSehKVKUGKtcYuWLlEsm-eTbbCcEI_r8s9ipWvDntWKvQ5IMEEP8DW0IQmQzbLoFQxTTq4f44qL8D6z0Ph1u4koEAfZ0YqEbbpTxisB1hWp-CR6lbHJ9PTBZ6NDXDiWYchzeLW_lTO4CECb05ZVkFS_ckHzocTtGbDqTbbWDWLCGIOB6IUEc2iobIu09DsbpHjU9FbbdMcESfAGMH3E5unAJt9GDkUavKZQg40gTV6rMf9MA0SO-Vh6uqeoojix6JzmFIfOJA7JjP-JAmzUaG7DOQZGeCtwCQEdLcqYW1EIYTUKui7_6Rs6FRe2XskGdtV42MS1lgOg1UP4iBio9odW5qpNEMT-1DTgABxEe3TqzSoIU4RoRx68MFDeHJA8smBCkg-piKpw2akLAz4lNI6qNLrubnLogjwtLhHRqnoI5zaqCt0T64xfTzuJQNs92UE9hXv3tJZc62ysQ0UEvPEKA9JJ4oVz2nk2ESy3WbyZEfd7qnf-2nmngYbxRR1mXo-KFlQ
+Host: datatube-hydra-stg-eastus2.azurewebsites.net
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3484
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:02 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:36:58.6767058Z","KJC.execute;e966a384-7a8e-43f9-818d-222a623ed1ad","44de241c-a937-4c27-8794-6b569e25a50a","f1d1a7b1-7ef2-40d4-a298-d0837611439d","f18807b3-278a-439d-9e52-3b613fc89243",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:03.5051341Z","KJC.execute;e966a384-7a8e-43f9-818d-222a623ed1ad","44de241c-a937-4c27-8794-6b569e25a50a","f1d1a7b1-7ef2-40d4-a298-d0837611439d","f18807b3-278a-439d-9e52-3b613fc89243",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":7.9533544,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:40.3125000\",\"kernel\":\"00:00:01.9375000\",\"total cpu\":\"00:00:42.2500000\"},\"memory\":{\"peak_per_node\":67286624}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+Certificate version: 3
+Valid from: Jul 21 23:00:00 2020 GMT
+Valid to  : Oct  8 07:00:00 2024 GMT
+Public key is 4096 bits
+The issuer name is /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+The subject name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+Extension Count: 8
+Peer certificate
+Certificate version: 3
+Valid from: Jul  7 18:20:52 2021 GMT
+Valid to  : Jul  7 18:20:52 2022 GMT
+Public key is 2048 bits
+The issuer name is /C=US/O=Microsoft Corporation/CN=Microsoft RSA TLS CA 02
+The subject name is /CN=*.azurewebsites.net
+Extension Count: 11
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3485
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:39 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:37:21.0059739Z","KJC.execute;1c250d91-5984-4ef5-a4e2-898a18a3d4d7","911a8e15-a03e-4717-ad59-a3051ba67782","39e72dcd-b040-42a5-8e96-2061b596790b","a9b1cd84-4347-40b3-972f-ddcfc659cd76",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:39.7093518Z","KJC.execute;1c250d91-5984-4ef5-a4e2-898a18a3d4d7","911a8e15-a03e-4717-ad59-a3051ba67782","39e72dcd-b040-42a5-8e96-2061b596790b","a9b1cd84-4347-40b3-972f-ddcfc659cd76",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":34.8916785,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:41.2812500\",\"kernel\":\"00:00:02.1250000\",\"total cpu\":\"00:00:43.4062500\"},\"memory\":{\"peak_per_node\":57243424}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3485
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:41 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:37:24.3810468Z","KJC.execute;6bc9c2bc-23c2-4677-ac79-e365f893a75f","664370a6-1a21-469c-95be-a499ac6bd164","0dd9fb11-274e-47ce-8df9-3778927bf04b","5b7f9123-28ef-4262-924d-5840e41896b8",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:42.2875562Z","KJC.execute;6bc9c2bc-23c2-4677-ac79-e365f893a75f","664370a6-1a21-469c-95be-a499ac6bd164","0dd9fb11-274e-47ce-8df9-3778927bf04b","5b7f9123-28ef-4262-924d-5840e41896b8",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":37.8917743,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:40.5312500\",\"kernel\":\"00:00:02.3750000\",\"total cpu\":\"00:00:42.9062500\"},\"memory\":{\"peak_per_node\":19660736}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3484
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:42 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:37:23.0216318Z","KJC.execute;06d5fc32-cfa7-4ee0-9995-35b48d802ca2","5bb7d7b9-3b81-42ad-bbe3-2c4cf17f5d8d","08e7e229-067f-4053-a21f-e0a3b42d56de","b962087e-63e0-4076-9866-227f30178258",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:42.787567Z","KJC.execute;06d5fc32-cfa7-4ee0-9995-35b48d802ca2","5bb7d7b9-3b81-42ad-bbe3-2c4cf17f5d8d","08e7e229-067f-4053-a21f-e0a3b42d56de","b962087e-63e0-4076-9866-227f30178258",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":36.5792209,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:41.0312500\",\"kernel\":\"00:00:02.4687500\",\"total cpu\":\"00:00:43.5000000\"},\"memory\":{\"peak_per_node\":38912192}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3485
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:42 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:37:21.4747685Z","KJC.execute;3fe65a80-362c-4a06-8700-8c2bc287f65d","61924043-17cc-4f51-aeba-837e2e86500e","7dcfa515-c49a-4c95-b255-0b1978fb4458","f1abda81-96db-491c-97c7-3b826f34172e",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:43.4594696Z","KJC.execute;3fe65a80-362c-4a06-8700-8c2bc287f65d","61924043-17cc-4f51-aeba-837e2e86500e","7dcfa515-c49a-4c95-b255-0b1978fb4458","f1abda81-96db-491c-97c7-3b826f34172e",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":37.4855002,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:40.9531250\",\"kernel\":\"00:00:02.4843750\",\"total cpu\":\"00:00:43.4375000\"},\"memory\":{\"peak_per_node\":23013840}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3485
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:43 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:37:21.6934695Z","KJC.execute;93662ddd-ebd5-4f89-883e-bc0929163c77","42864379-42f6-4a73-a3d0-f6100815a2dc","07b8d088-a5a5-4ec3-b49f-7bb913c7b623","2654069f-b4a0-412c-a4d9-0bc6c5a4e688",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:44.1939129Z","KJC.execute;93662ddd-ebd5-4f89-883e-bc0929163c77","42864379-42f6-4a73-a3d0-f6100815a2dc","07b8d088-a5a5-4ec3-b49f-7bb913c7b623","2654069f-b4a0-412c-a4d9-0bc6c5a4e688",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":38.0636937,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:41.3437500\",\"kernel\":\"00:00:02.2500000\",\"total cpu\":\"00:00:43.5937500\"},\"memory\":{\"peak_per_node\":23841376}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3485
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:44 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:37:26.8498614Z","KJC.execute;b840f8be-79e8-4237-be34-a2bf4ff936ed","7332e5e2-946d-4c2b-9e36-a71c26c04458","1b4d6c54-32fb-47c0-9b5e-024f023532ad","820107da-a942-446f-9f54-0382a1d9277c",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:44.6782659Z","KJC.execute;b840f8be-79e8-4237-be34-a2bf4ff936ed","7332e5e2-946d-4c2b-9e36-a71c26c04458","1b4d6c54-32fb-47c0-9b5e-024f023532ad","820107da-a942-446f-9f54-0382a1d9277c",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":34.9854404,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:41.2968750\",\"kernel\":\"00:00:02.1718750\",\"total cpu\":\"00:00:43.4687500\"},\"memory\":{\"peak_per_node\":56352048}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3485
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:44 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:37:28.3655162Z","KJC.execute;9482b0ef-b427-42a1-bdf2-6178a71ba98b","2bb7c576-e2cc-45d5-bba9-7fe1659263d4","b55f9913-5499-4f3b-9f28-e137ccbb921d","6a398867-a78b-4eea-89a6-080530196744",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:44.4126508Z","KJC.execute;9482b0ef-b427-42a1-bdf2-6178a71ba98b","2bb7c576-e2cc-45d5-bba9-7fe1659263d4","b55f9913-5499-4f3b-9f28-e137ccbb921d","6a398867-a78b-4eea-89a6-080530196744",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":35.7511025,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:40.8750000\",\"kernel\":\"00:00:02.1718750\",\"total cpu\":\"00:00:43.0468750\"},\"memory\":{\"peak_per_node\":18502384}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3485
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:45 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:37:30.3968312Z","KJC.execute;d703e292-df58-41af-b47e-78ec1a738b31","840d90fa-31ac-4711-8505-e5381428cebc","9fcc23b9-c752-4e22-a47d-aaddca989cff","a2c4ebd4-a021-4f20-af4c-3408bc53cf41",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:44.4751462Z","KJC.execute;d703e292-df58-41af-b47e-78ec1a738b31","840d90fa-31ac-4711-8505-e5381428cebc","9fcc23b9-c752-4e22-a47d-aaddca989cff","a2c4ebd4-a021-4f20-af4c-3408bc53cf41",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":39.0011973,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:40.4687500\",\"kernel\":\"00:00:02.0312500\",\"total cpu\":\"00:00:42.5000000\"},\"memory\":{\"peak_per_node\":24989568}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Length: 3485
+Content-Type: text/plain; charset=UTF-8
+Server: akka-http/10.1.11
+Date: Tue, 14 Sep 2021 11:37:45 GMT
+Connection: close
+
+[{"FrameType":"DataSetHeader","IsProgressive":false,"Version":"v2.0"},{"FrameType":"DataTable","TableId":0,"TableKind":"QueryProperties","TableName":"@ExtendedProperties","Columns":[{"ColumnName":"TableId","ColumnType":"int"},{"ColumnName":"Key","ColumnType":"string"},{"ColumnName":"Value","ColumnType":"dynamic"}],"Rows":[[1,"Visualization","{\"Visualization\":null,\"Title\":null,\"XColumn\":null,\"Series\":null,\"YColumns\":null,\"AnomalyColumns\":null,\"XTitle\":null,\"YTitle\":null,\"XAxis\":null,\"YAxis\":null,\"Legend\":null,\"YSplit\":null,\"Accumulate\":false,\"IsQuerySorted\":true,\"Kind\":null,\"Ymin\":\"NaN\",\"Ymax\":\"NaN\"}"]]},{"FrameType":"DataTable","TableId":1,"TableKind":"PrimaryResult","TableName":"PrimaryResult","Columns":[{"ColumnName":"src","ColumnType":"string"},{"ColumnName":"count","ColumnType":"long"},{"ColumnName":"_TotalCount_","ColumnType":"long"}],"Rows":[["10.32.169.250",161896,4307234],["10.13.196.152",87869,4307234],["103.245.13.158",77388,4307234],["10.32.159.250",72238,4307234],["10.32.195.22",68074,4307234],["42.40.195.105",63178,4307234],["116.132.210.80",54550,4307234],["82.211.137.205",52946,4307234],["127.235.219.3",50321,4307234],["60.22.14.112",38571,4307234]]},{"FrameType":"DataTable","TableId":2,"TableKind":"QueryCompletionInformation","TableName":"QueryCompletionInformation","Columns":[{"ColumnName":"Timestamp","ColumnType":"datetime"},{"ColumnName":"ClientRequestId","ColumnType":"string"},{"ColumnName":"ActivityId","ColumnType":"guid"},{"ColumnName":"SubActivityId","ColumnType":"guid"},{"ColumnName":"ParentActivityId","ColumnType":"guid"},{"ColumnName":"Level","ColumnType":"int"},{"ColumnName":"LevelName","ColumnType":"string"},{"ColumnName":"StatusCode","ColumnType":"int"},{"ColumnName":"StatusCodeName","ColumnType":"string"},{"ColumnName":"EventType","ColumnType":"int"},{"ColumnName":"EventTypeName","ColumnType":"string"},{"ColumnName":"Payload","ColumnType":"string"}],"Rows":[["2021-09-14T11:37:31.6312489Z","KJC.execute;0fbbba94-1034-4afa-b229-6f4c73d1540d","f039df1b-484e-4aed-9827-9b0df8827aca","09561c7e-3e51-4d2c-bc5b-cfb64951ec03","4e1b8418-c775-45b1-98ce-2b438385bf83",4,"Info",0,"S_OK (0)",4,"QueryInfo","{\"Count\":1,\"Text\":\"Query completed successfully\"}"],["2021-09-14T11:37:44.8501447Z","KJC.execute;0fbbba94-1034-4afa-b229-6f4c73d1540d","f039df1b-484e-4aed-9827-9b0df8827aca","09561c7e-3e51-4d2c-bc5b-cfb64951ec03","4e1b8418-c775-45b1-98ce-2b438385bf83",6,"Stats",0,"S_OK (0)",0,"QueryResourceConsumption","{\"ExecutionTime\":35.1573192,\"resource_usage\":{\"cache\":{\"memory\":{\"hits\":0,\"misses\":0,\"total\":0},\"disk\":{\"hits\":0,\"misses\":0,\"total\":0},\"shards\":{\"hot\":{\"hitbytes\":4849482398,\"missbytes\":0,\"retrievebytes\":0},\"cold\":{\"hitbytes\":0,\"missbytes\":0,\"retrievebytes\":0},\"bypassbytes\":0}},\"cpu\":{\"user\":\"00:00:40.2031250\",\"kernel\":\"00:00:02.2500000\",\"total cpu\":\"00:00:42.4531250\"},\"memory\":{\"peak_per_node\":17974528}},\"input_dataset_statistics\":{\"extents\":{\"total\":336,\"scanned\":28,\"scanned_min_datetime\":\"2021-08-16T21:49:33.8434190Z\",\"scanned_max_datetime\":\"2021-08-26T01:50:09.1899318Z\"},\"rows\":{\"total\":575485384,\"scanned\":203404492},\"rowstores\":{\"scanned_rows\":0,\"scanned_values_size\":0},\"shards\":{\"queries_generic\":14,\"queries_specialized\":0}},\"dataset_statistics\":[{\"table_row_count\":10,\"table_size\":392}]}"]]},{"FrameType":"DataSetCompletion","HasErrors":false,"Cancelled":false}]
+..done
+
+
+Server Software:        akka-http/10.1.11
+Server Hostname:        datatube-hydra-stg-eastus2.azurewebsites.net
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+Server Temp Key:        ECDH P-256 256 bits
+TLS Server Name:        datatube-hydra-stg-eastus2.azurewebsites.net
+
+Document Path:          /query
+Document Length:        Variable
+
+Concurrency Level:      10
+Time taken for tests:   52.422 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      36498 bytes
+Total body sent:        22660
+HTML transferred:       34848 bytes
+Requests per second:    0.19 [#/sec] (mean)
+Time per request:       52422.191 [ms] (mean)
+Time per request:       5242.219 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.68 [Kbytes/sec] received
+                        0.42 kb/s sent
+                        1.10 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      458  580 288.5    503    1399
+Processing:  9184 36629 9788.0  40241   41336
+Waiting:     9183 36628 9788.3  40241   41336
+Total:      10583 37209 9505.9  40699   41839
+
+Percentage of the requests served within a certain time (ms)
+  50%  40699
+  66%  41193
+  75%  41472
+  80%  41728
+  90%  41839
+  95%  41839
+  98%  41839
+  99%  41839
+ 100%  41839 (longest request)

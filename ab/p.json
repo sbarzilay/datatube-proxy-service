@@ -1,0 +1,4 @@
+{
+	"query": "database('28af0bf0-eda5-47f9-881f-43255adc2d7b-laasonprem').table('93a4883c_bf60_49db_8d31_4af147e219eb') | where ['time'] between ( datetime(2021-08-17T21:00:00.000Z) ..datetime(2021-08-25T08:36:53.000Z) ) | where (product has_any ('Firewall','Application Control','URL Filtering','DLP') and action in~ ('Drop','Reject','Accept','Block','Allow','Inform User','Ask User','Do not send','Send','Detect','Prevent') and type has_any ('Log','Alert','Session') and action in~ ('Block','Drop','Reject') and not ( isempty(src) )) | project src, id   | as T  | summarize ['count']=dcount(id) by src | order by ['count'] desc | limit 10 | extend _TotalCount_=toscalar(T | summarize dcount(id))",
+    "datatype": "hydraplayground"
+}
