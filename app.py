@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+import sys
 import time
 
 from flask import Flask, request
@@ -13,13 +14,15 @@ app = Flask(__name__)
 client = Kusto()
 
 logger = logging.getLogger(__name__)
+handler = logging.StreamHandler(sys.stdout)
+handler.setLevel(logging.DEBUG)
+logger.addHandler(handler)
 
 application_insights_key = os.getenv('APPINSIGHTS_INSTRUMENTATIONKEY')
 logger.addHandler(AzureLogHandler(
 	connection_string=f'InstrumentationKey={application_insights_key}')
 )
 logger.info('init logger')
-
 
 @app.route('/', methods=['GET'])
 def hello():
